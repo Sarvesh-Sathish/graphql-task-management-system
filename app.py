@@ -12,13 +12,5 @@ def hello_world():
     return render_template('index.html', message = message)
 
 if __name__ == "__main__":
-    app.add_url_rule(
-        '/graphql',
-        view_func=GraphQLView.as_view(
-            'graphql',
-            schema=schema,
-            graphiql=True  # for having the GraphiQL interface
-        )
-    )
     app.run(debug=True)
     
