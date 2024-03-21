@@ -1,3 +1,7 @@
+## Run Locally 
+```
+flask --app app.py --debug run
+```
 ## Tech Stack Used
 
 ### Backend Language
