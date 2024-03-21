@@ -1,7 +1,5 @@
 from flask import Flask
 from flask import render_template
-from .schema import schema
-from flask_graphql import GraphQLView
 
 
 app = Flask(__name__)

@@ -1,6 +1,4 @@
 from graphene import String
-
-class User {
-    id = String()
+class User:
+    email = String()
     password = String()
-}
