@@ -14,7 +14,7 @@ def hello_world():
     if q.resolve_user(None, newEmail) is None:
         CreateUser.mutate(None, None, newEmail, newPass)
     message = str(q.resolve_users(None))
-    return render_template('index.html', message = message)
+    return render_template('signup.html', message = message)
 
 if __name__ == "__main__":
     app.run(debug=True)
